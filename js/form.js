@@ -9,6 +9,6 @@ $('#notify-submit').on('click', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    // do something
+    console.log($form.serializeObject())
   );
 })
