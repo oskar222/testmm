@@ -9,10 +9,10 @@ $('#notify-submit').on('click', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    var email = $form.find("input[type=email]");
-    var label = $form.find("label[for=" + email.attr("id") + "]");
-    msg = "We have sent you a confirmation email";
+    var msg = "We have sent you a confirmation email";
+    var mail = $form.find("input[type=email]");
+    var label = $form.find("label[for=" + mail.attr("id") + "]");
     label.removeClass("error").addClass("valid");
-    email.removeClass("error").addClass("valid")
+    mail.removeClass("error").addClass("valid")
   );
 })
