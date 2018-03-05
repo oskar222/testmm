@@ -7,7 +7,7 @@ $('#notify-submit').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serializeObject()
+    data: $form.serializeArray()[0];
   }).success(
     // do something
   );
